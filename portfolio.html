@@ -6,44 +6,87 @@
 
 <head>
 
-<title> Lindsay Bio - Portfolio  </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lindsay Bio - Portfolio  </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 
 <body>
 
-| Portfolio |
+
+<!--RESUME AND BUSINESS CARDS WERE MADE SPECIFICALLY FOR THIS PAGES LOOKS
+NEITHER OF THEM ARE ACCURATE OR ARE BEING USED, THEY WERE
+CREATED IN ADOBE ILLUSTRATOR-->
+
+		| Portfolio |
 
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="contact.html">Contact</a></li>
 </ul>
 
 
 
 <div class="bodybox">
 
-<p class="p1"> My Portfolio </p>
+	<p class="p1"> My Portfolio </p>
 
-<div class="imgcontainer2">
+<hr class="hr1">
 
-<img id="myImg" src="businesscard1.png" alt="My Business Card" style="width:100%;max-width:300px">
+<!--Img Modal-->
+
+	<div class="imgcontainer2">
+
+		<img id="myImg" src="images/businesscard1.png" alt="My Business Card" style="width:100%;max-width:300px">
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+	</div>
+
+<!--Second Img Modal MODAL DOESNT WORK-->
+
+	<div class="imgcontainer3">
+
+		<img id="myImg2" src="images/resume1.png" alt="My Resume" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption2"></div>
+		</div>
+
+	</div>
+
+<!---Resume resizes improperly over the bottom hr-->
+
+
+<!--Breaks are to align bottom hr-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="hr1">
 
 </div>
 
-</div>
+
+<!--Modal Javascript-->
 
 <script>
 // Get the modal

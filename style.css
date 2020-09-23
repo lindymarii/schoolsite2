@@ -12,12 +12,14 @@ body {
 }
 
 
+
 /*P div classes*/
 
 .p1 { 
 	 font-size: 57px;
 	 color: #ff99ff;
 }
+
 
 
 /*div containers*/
@@ -57,6 +59,11 @@ body {
 			   padding: 1%;
 }
 
+.imgin {
+  width: 500%;
+  height: auto;
+}
+
 .indextextbox3 {
 			   float: left;
 			   color: white;
@@ -84,13 +91,15 @@ body {
 }
 
 
-/*Makes index image responsive*/
-
-.responsive {
-			max-width: 400px;
-			height: auto;
-			width: 100%;
+.imgcontainer3 {
+				float: right;
+				margin-bottom: 6%;
+				margin-right: 6%;
 }
+
+
+
+
 
 /*Nav Bar*/
 
@@ -119,20 +128,8 @@ li a:hover {
   background-color: #ffe6ff;
 }
 
-/*CSS for image overlap
- .card {
-        width: auto;
-        height: auto;
-        background: url("indexheart.png") no-repeat;
-        padding: 0%;
-}
-   
-   .card:hover {
-        background: url("augheart.png") no-repeat
-}
 
 
-*/
 
 /*CSS for img modal*/
 
@@ -177,6 +174,7 @@ li a:hover {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-size: 25px;
 }
 
 /* Add Animation */
@@ -223,6 +221,99 @@ li a:hover {
 }
 
 
+
+/*CSS for 2nd img modal*/
+
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 25px;
+}
+
+/* Add Animation */
+.modal-content, #caption2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
 /*Media Queries, color is unresponsive*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -248,4 +339,13 @@ li a:hover {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .example {background: pink;}
+}
+
+
+/*other stuff*/
+
+.hr1{
+	 width: auto;
+	 height: 8px;
+	 background-color: #ffb3ff;
 }
