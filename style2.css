@@ -46,19 +46,84 @@ body {
 
 .imgbox1 {
 			float: right;
-			margin-right: 4%;
+			margin: auto;
 }
 
-.textbox1 { 
+.imgbox2 {
 			float: left;
-			background-color: #eca5ff;
-			color: white; 
+			margin: auto;
+}
+
+
+.textbox1 { 
+			float: center;
+			color: #b834ff; 
 			font-family: Arial Narrow, Times New Roman;
 			border-radius: 16px;
 			font-size: 20px;
-			margin: 1%;
+			margin: 4%;
 			padding: 1%;
 }
+
+.textbox2 { 
+			float: center;
+			color: #b834ff; 
+			font-family: Arial Narrow, Times New Roman;
+			border-radius: 16px;
+			font-size: 20px;
+			margin: 3%;
+			padding: 1%;
+}
+
+.textbox3 { 
+			float: center;
+			color: #b834ff;  
+			font-family: Arial Narrow, Times New Roman;
+			border-radius: 16px;
+			font-size: 20px;
+			margin: 3%;
+			padding: 1%;
+}
+
+.textbox4 { 
+			float: center;
+			color: #b834ff; 
+			font-family: Arial Narrow, Times New Roman;
+			border-radius: 16px;
+			font-size: 20px;
+			margin: 3%;
+			padding: 1%;
+}
+	
+.textbox5 {
+			float: right;
+			color: white;
+			background-color: #d975e0; 
+			font-family: Arial Narrow, Times New Roman;
+			border-radius: 16px;
+			font-size: 20px;
+			margin: 3%;
+			padding: 1%;
+}
+
+
+.textbox6 {
+			float: right;
+			color: white;
+			background-color: #d975e0; 
+			font-family: Arial Narrow, Times New Roman;
+			border-radius: 16px;
+			font-size: 20px;
+			margin: 3%;
+			padding: 1%;
+}
+	
+.contactbox {
+			 float: left;
+			 font-size: 20px;
+			 color: black;
+}
+	
 	
 /*Nav Bar*/
 
@@ -87,3 +152,10 @@ li a:hover {
   background-color: #f7d8ff;
 }
 
+/*Other stuff*/
+
+.hr1{
+	 width: auto;
+	 height: 8px;
+	 background-color: #eca5ff;
+}

@@ -6,31 +6,142 @@
 
 <head>
 
-<title> Lindsay Bio - Portfolio  </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lindsay Bio - Portfolio  </title>
 
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="author" content="Lindsay Neher">
+
+	<link rel="icon" href="https://freepikpsd.com/wp-content/uploads/2019/10/pixel-heart-png.png">
+	
 </head>
 
 
 <body>
 
-| Portfolio |
+
+<!--RESUME AND BUSINESS CARDS WERE MADE SPECIFICALLY FOR THE PAGES LOOKS
+NEITHER OF THEM ARE ACCURATE OR ARE BEING USED, THEY WERE
+CREATED IN ADOBE ILLUSTRATOR-->
+
+		| Portfolio |
 
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="contact.html">Contact</a></li>
 </ul>
 
 
 
 <div class="bodybox">
 
-<p class="p1"> My Portfolio </p>
+	<p class="p1"> My Portfolio </p>
+
+<hr class="hr1">
+
+
+
+<!--Img Modal-->
+
+	<div class="imgcontainer2">
+
+		<img id="myImg" src="images/businesscard1.png" alt="My Business Card" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+	</div>
+
+
+
+<!--Second Img Modal MODAL DOESNT WORK-->
+
+	<div class="imgcontainer3">
+
+		<img id="myImg2" src="images/resume1.png" alt="My Resume" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption2"></div>
+		</div>
+
+	</div>
+
+
+<!--Breaks are to align bottom hr-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="hr1">
 
 </div>
+
+
+<!--Modal Javascript-->
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+//Second Modal Javascript
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
 
 </body>
 
